@@ -16,7 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   void initState() {
     super.initState();
 
-    if (_myBox.get("TODOLSIT") == null) {
+    if (_myBox.get("TODOLIST") == null) {
       db.createInitialData();
     } else {
       db.loadData();
